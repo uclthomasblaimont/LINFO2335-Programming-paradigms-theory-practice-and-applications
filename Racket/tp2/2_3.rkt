@@ -8,6 +8,8 @@
 (f 3) ; 9
 
 
+
+
 (define (filter p l)
     (cond 
         ((null? l) '()) ; base case 
@@ -17,6 +19,7 @@
         (else (filter p (cdr l))) ; if not predicat then call the function filter on the tail
     )
 )
+
 
 (define mylist '(1 -2 3 -4 5 6 6 -9))
 
